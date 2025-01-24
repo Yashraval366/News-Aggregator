@@ -6,19 +6,19 @@ let currentCategory = "all"
 let currentSource = ""
 window.addEventListener("load", () => getNews(currentCategory, currentSource));
 
-const selectCategory = document.getElementById("categorySelect")
-const selectSource = document.getElementById("sourceSelect")
+const selectCategory = document.getElementById("categorySelect");
+const selectSource = document.getElementById("sourceSelect");
 
-const searchBtn = document.getElementById("searchBtn")
-const searchInput = document.getElementById("searchInput")
+const searchBtn = document.getElementById("searchBtn");
+const searchInput = document.getElementById("searchInput");
 
 searchBtn.addEventListener("click", () => {
     const query = searchInput.value
     if(!query){
         return;
     }
-    currentCategory = query
-    getNews(currentCategory, currentSource)
+    currentCategory = query;
+    getNews(currentCategory, currentSource);
 })
 
 selectCategory.addEventListener("change", (event)=> {
