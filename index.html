@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>News Aggregator</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>News Aggregator</h1>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search news...">
+                <button id="searchBtn">Search</button>
+            </div>
+            <section class="filters">
+                <label for="categorySelect">Category:</label>
+                <select id="categorySelect">
+                    <option class="all" value="all">All</option>
+                    <option id="technology" value="technology">Technology</option>
+                    <option id="sports" value="sports">Sports</option>
+                    <option id="business" value="business">Business</option>
+                    <option id="health" value="health">Health</option>
+                </select>
+            
+                <label for="sourceSelect">Source:</label>
+                <select id="sourceSelect">
+                    <option class="all" value="all">All Sources</option>
+                    <option id="bbc-news" value="bbc.com">BBC News</option>
+                    <option id="hindustantimes" value="hindustantimes.com">Hindustan Times</option>
+                    <option id="cnn" value="cnn.com">CNN</option>
+                    <option id="techcrunch" value="techcrunch.com">TechCrunch</option>
+                </select>
+            </section>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+
+        <section class="news-container" id="news-container-id">
+
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 News Aggregator</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
